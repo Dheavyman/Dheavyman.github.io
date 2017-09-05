@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="heading" class="row">
+                <div class="col s3">
+                    <h3><a href="index.html" class="brand-logo white-text">More-Recipes</a></h3>
+                </div>
+                <ul id="image_logo" class="col s5 offset-s4">
+                    <li><img src="images/image6.jpg"></li>
+                    <li><img src="images/image8.jpg"></li>
+                    <li><img src="images/image10.jpg"></li>
+                    <li><img src="images/image12.jpg"></li>
+                    <li><img src="images/image14.jpg"></li>
+                    <li><img src="images/image16.jpg"></li>
+                </ul>
+            </div>
+            <nav class="indigo accent-2">
+                <div class="nav-wrapper valign-wrapper right">
+                    <ul id="nav-mobile" class="right hide-on-small">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="recipes.html">My Recipes</a></li>
+                        <li><a href="favorites.html">My Favorites</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <!-- Category side nav to be implemented later -->
+                <div id="category" class="col s2 z-depth-3 indigo lighten-4">                   
+                    <div class="card-panel col s12 indigo accent-2">
+                        <h6><span class=" subheader white-text">Category</span></h6>
+                    </div>
+                    <div class="collection">
+                        <a href="#!" class="collection-item black-text">Breakfast</a>
+                        <a href="#!" class="collection-item black-text">Lunch</a>
+                        <a href="#!" class="collection-item black-text">Dinner</a>
+                        <a href="#!" class="collection-item black-text">Appetizer</a>
+                        <a href="#!" class="collection-item black-text">Main</a>
+                        <a href="#!" class="collection-item black-text">Dessert</a>
+                    </div>             
+                </div>
+                <div id="main_body" class="col s10">
+                    <div class="row">
+                        <div id="modal1" class="modal center-align">
+                            <form class="col s12" method="post">
+                                <div class="modal-content">
+                                    <h5>Add Recipe</h5>
+                                    <div class="row"></div>
+                                    <div class="row">
+                                        <div class="file-field input-field">
+                                            <div class="btn indigo accent-2">
+                                                <span>File</span>
+                                                <input type="file">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text" placeholder="Upload picture">
+                                            </div>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input id="recipe_name" type="text" class="validate" required>
+                                            <label for="recipe_name">Title</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea id="recipe_description" class="materialize-textarea" required></textarea>
+                                            <label for="recipe_description">Description</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input id="recipe_prep_time" type="number" min="0" class="materialize-textarea" required>
+                                            <label for="recipe_prep_time">Preparation Time (MINS)</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea id="recipe_ingredients" class="materialize-textarea" required></textarea>
+                                            <label for="recipe_ingredients">Ingredients</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea id="recipe_directions" class="materialize-textarea" required></textarea>
+                                            <label for="recipe_directions">Directions</label>
+                                        </div>
+                                    </div>      
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn modal-close waves-effect waves-light btn-flat red lighten-2 white-text">Cancel</button>
+                                    <button type="submit" class="btn modal-action waves-effect waves-light btn-flat indigo accent-2 white-text">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="modal2" class="modal center-align">
+                            <form class="col s12" method="post">
+                                <div class="modal-content">
+                                    <h5>Edit Recipe</h5>
+                                    <div class="row"></div>
+                                    <div class="row">
+                                        <div class="file-field input-field">
+                                            <div class="btn indigo accent-2">
+                                                <span>File</span>
+                                                <input type="file">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text" placeholder="Upload picture">
+                                            </div>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input id="recipe_name" type="text" class="validate" required>
+                                            <label for="recipe_name">Title</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea id="recipe_description" class="materialize-textarea" required></textarea>
+                                            <label for="recipe_description">Description</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input id="recipe_prep_time" type="number" min="0" class="materialize-textarea" required>
+                                            <label for="recipe_prep_time">Preparation Time (MINS)</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea id="recipe_ingredients" class="materialize-textarea" required></textarea>
+                                            <label for="recipe_ingredients">Ingredients</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea id="recipe_directions" class="materialize-textarea" required></textarea>
+                                            <label for="recipe_directions">Directions</label>
+                                        </div>
+                                    </div>      
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn modal-close waves-effect waves-light btn-flat red lighten-2 white-text">Cancel</button>
+                                    <button type="submit" class="btn modal-action waves-effect waves-light btn-flat indigo accent-2 white-text">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="fixed-action-btn">
+                        <button data-target="modal1" class="btn-floating btn-large waves-effect waves-light indigo accent-2 modal-trigger"><i class="material-icons">add</i></button>
+                    </div>
+                    <div class="col s6">
+                        <h5 class="header">German Burger</h5>
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="images/image15.jpg">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>The best snacks you can have.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#modal2" class="btn btn-flat modal-trigger teal white-text">Edit</a>
+                                    <a class="btn btn-flat red lighten-2 white-text">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <h5 class="header">French Chips</h5>
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="images/image13.jpg">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>So delicious.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#modal2" class="btn btn-flat modal-trigger teal white-text">Edit</a>
+                                    <a class="btn btn-flat red lighten-2 white-text">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <h5 class="header">Canadian Soup</h5>
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="images/image11.jpg">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>Filled with sweetness and nutrients.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#modal2" class="btn btn-flat modal-trigger teal white-text">Edit</a>
+                                    <a class="btn btn-flat red lighten-2 white-text">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <h5 class="header">German Sauce</h5>
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="images/image9.jpg">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>A rich meal for an awesome afternoon.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#modal2" class="btn btn-flat modal-trigger teal white-text">Edit</a>
+                                    <a class="btn btn-flat red lighten-2 white-text">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer indigo darken-3">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/src.js"></script>
+    </body>
+</html>

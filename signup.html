@@ -8,20 +8,15 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
-        <div class="row card-panel teal darken-4">
-            <h2 class="col s6 white-text">More-Recipes</h2>
-            <ul id="image-logo" class="col s6">
-                <li><img src="images/image1.jpg"></li>
-                <li><img src="images/image2.jpg"></li>
-                <li><img src="images/image3.jpg"></li>
-                <li><img src="images/image4.jpg"></li>
-            </ul>
+    <body id="body">
+        <div id="heading" class="col s12 valign-wrapper indigo darken-4">
+            <h5><a href="index.html" class="brand-logo white-text">More-Recipes</a></h5>
         </div>
+        <div class="row"></div>
         <div class="container">
-            <div id="form-body">
+            <div id="form-body" class="z-depth-5">
                 <div class="row">
-                    <h5 class="teal-text center-align">Create an account</h5>
+                    <h5 class="blue-text center-align">Create an account</h5>
                     <form class="col s12" method="post">
                         <div class="input-field col s12">
                             <input id="username" name="username" type="text" class="validate" required>
@@ -39,11 +34,12 @@
                             <input id="email" name="email" type="email" class="validate" required>
                             <label for="email">Email</label>
                         </div>
+                        <div class="row"></div>
                         <div class='row'>
-                            <button type='submit' name='signupbtn' class='col s6 offset-s3 btn btn-large waves-effect waves-light teal'>SignUp</button>
+                            <button type='submit' name='signupbtn' class='col s6 offset-s3 btn btn-large waves-effect waves-light indigo darken-2'>Sign Up</button>
                         </div>
                         <div class="row center-align">
-                            Already have an account? <a href="signin.html">Sign In</a>
+                            Already have an account? <a href="signin.html" class="blue-text">Sign In</a>
                         </div>
                         
                     </form>

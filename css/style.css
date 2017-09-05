@@ -1,127 +1,172 @@
-body {
-    background: #222;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+/* Index page style with exention to other pages */
+#heading {
+    background-color: #283593;
+    margin-bottom: 0px;
 }
 
-.container {
-    background: rgba(162, 244, 245, 0.50);
-    width: 100%;
-    
+#heading .brand-logo {
+    font-size: 25px;
+    margin-left: 20px;
 }
 
-#container {
+#search {
     width: 80%;
-    margin: auto;
-    background: rgba(164, 237, 241, 0.50);
+    padding-left: 40px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
-main {
-    flex: 1 0 auto;
+#access_anchor a{
+    padding-left: 30px;
 }
 
-.card-panel {
-    height: 120px;
+nav {
+    margin-top: 0px;
+    height: 30px;
+    padding-right: 100px;
 }
 
-#image-logo li {
+#category {
+    min-height: 100vh;
+}
+
+#category .card-panel {
+    margin-bottom: 0px;
+}
+
+#category .collection {
+    margin-top: 0px;
+}
+
+#main_body {
+    min-height: 100vh;
+}
+
+#recipe_cards {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+/**
+ * Custom styling for recipes, recipe, favourite
+   and profile pages 
+ */
+#image_logo ul {
+    margin: 0px;
+}
+
+#image_logo li {
     display: inline-block;
+    margin: 0px;
 }
 
-#image-logo li img {
+#image_logo li img {
     height: 80px;
+    max-width: 80px;
+    margin: 0px;
 }
 
-.input-field label {
-    color: #000;
+.modal {
+    width: 450px;
+}
+
+.fixed-action-btn {
+    margin-right: 5%;
+    margin-bottom: 30%;
+}
+
+/**
+ * Recipe page 
+ */
+ #recipe_photo {
+    width: 450px;
+    margin: auto;
+    background-color: orangered;
+}
+
+#recipe_details {
+    width: 60%;
+}
+
+#recipe_details label {
+    color: black;
+    font-size: 14px;
+}
+
+#recipe_photo img {
+    width: 400px;
+    max-width: 400px;
+}
+
+#reviews {
+    background-color: #536dfe;
+    padding-left: 20px;
+}
+
+#vote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vote .btn {
+    background-color: #536dfe;
+}
+
+#vote_count {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#add_review {
+    border: 1px solid grey;
+}
+
+/**
+ * Profile page 
+ */
+ #profile_photo {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+#about_user label {
+    color: black;
+    font-size: 14px;
+}
+
+.modal {
+    width: 450px;
+}
+
+/**
+ * Favorites page 
+ */
+#favorites .card {
+    min-height: 400px;
+}
+
+/**
+ * Signup and signin pages
+ */
+ #body {
+    background: url(../images/image5.jpg) no-repeat center;
+    height: 100%;
+    min-height: 70vh; 
+    background-size: cover;
+}
+
+#heading {
+    padding-left: 20px;
 }
 
 #form-body {
     margin: auto;
     background: white;
     padding: 20px 25px;
-    border: 5px solid #26a69a;
     width: 450px;
     height: auto;
     box-sizing: border-box;
-}
-
-.nav-wrapper {
-    padding: 0 15px 0 15px;
-}
-
-#body {
-    padding: 10px;
-    min-height: 100vh;
-    background-color: white;
-}
-
-#search {
-    padding-left: 40px;
-    padding-right: 20px;
-    box-sizing: border-box;
-}
-
-h4, .modal h4 {
-    font-size: 25px;
-    text-align: center;
-}
-
-h5 {
-    font-size: 20px;
-    text-align: center;
-}
-
-h6 {
-    font-size: 14px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-#description, #ingredients, #directions {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-#items {
-    margin-left: 40px;
-    font-size: 20px;
-}
-#reviews {
-    height: 40px;
-    padding-left: 20px;
-    background-color: #5D8B78;
-}
-.modal {
-    width: 550px;
-}
-
-#recipe_image {
-    margin: auto;
-    width: 450px;
-    height: 250px;
-    border: 2px solid orangered;
-    box-sizing: border-box;
-}
-
-#profile_photo {
-    width: 250px;
-    height: 250px;
-    margin-top: 20px;
-    margin: auto;
-    border-radius: 100%;
-    border: 2px solid orangered;
-    box-sizing: border-box;
-}
-
-#user_profile {
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-top: 60px;
-}
-
-#user_profile label {
-    color: black;
-    font-size: 16px;
+    border-radius: 10px;
 }

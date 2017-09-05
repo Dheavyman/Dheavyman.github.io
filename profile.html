@@ -10,56 +10,172 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="nav-wrapper teal">
-                    <a href="index.html" class="brand-logo">More-Recipes</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <div id="heading" class="row">
+                <div class="col s3">
+                    <h3><a href="index.html" class="brand-logo white-text">More-Recipes</a></h3>
+                </div>
+                <ul id="image_logo" class="col s5 offset-s4">
+                    <li><img src="images/image6.jpg"></li>
+                    <li><img src="images/image8.jpg"></li>
+                    <li><img src="images/image10.jpg"></li>
+                    <li><img src="images/image12.jpg"></li>
+                    <li><img src="images/image14.jpg"></li>
+                    <li><img src="images/image16.jpg"></li>
+                </ul>
+            </div>
+            <nav class="indigo accent-2">
+                <div class="nav-wrapper valign-wrapper right">
+                    <ul id="nav-mobile" class="right hide-on-small">
                         <li><a href="profile.html">Profile</a></li>
-                        <li><a href="favorites.html">Favorites</a></li>
-                        <li><a href="myrecipes.html">My Recipes</a></li>
+                        <li><a href="recipes.html">My Recipes</a></li>
+                        <li><a href="favorites.html">My Favorites</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
-            <div class="row"></div>
-            <div id="container" class="row">
-                <div id="body">
-                    <h4>Profile</h4><hr>
-                    <div id="profile_photo">
-                        <img src="">
+            <div class="row">
+                <!-- Category side nav to be implemented later -->
+                <div id="category" class="col s2 z-depth-3 indigo lighten-4">
+                    <div class="card-panel col s12 indigo accent-2">
+                        <h6><span class=" subheader white-text">Category</span></h6>
                     </div>
-                    <div id="user_profile" class="row">
-                        <div id="profile_name" class="row">
-                            <label for="username" class="col s2">Username: </label>
-                            <div id="username" class="col s10"></div>
-                        </div>
-                        <div id="profile_email" class="row">
-                            <label for="email" class="col s2">Email: </label>
-                            <div id="email" class="col s10"></div>
-                        </div>
-                        <div id="profile_first_name" class="row">
-                            <label for="firstname" class="col s2">First Name: </label>
-                            <div id="firstname" class="col s10"></div>
-                        </div>
-                        <div id="profile_last_name" class="row">
-                            <label for="lastname" class="col s2">Last Name: </label>
-                            <div id="lastname" class="col s10"></div>
-                        </div>
+                    <div class="collection">
+                        <a href="#!" class="collection-item black-text">Breakfast</a>
+                        <a href="#!" class="collection-item black-text">Lunch</a>
+                        <a href="#!" class="collection-item black-text">Dinner</a>
+                        <a href="#!" class="collection-item black-text">Appetizer</a>
+                        <a href="#!" class="collection-item black-text">Main</a>
+                        <a href="#!" class="collection-item black-text">Dessert</a>
                     </div>
                 </div>
+                <div id="main_body" class="col s10">
+                    <div class="row">
+                        <div class="row"></div>
+                        <div class="col s4">
+                            <img id="profile_photo" class="materialboxed responsive-img circle" src="images/img_avater.png" alt="">
+                            <div class="row"></div>
+                            <div id="activities" class="collection">
+                                <p class="collection-item"><span class="badge">250</span>My recipes</p>
+                                <p class="collection-item"><span class="badge">10</span>Favorites</p>
+                            </div>
+                        </div>
+                        <div class="col s8">
+                            <div class = "col s12">
+                                <div class = "card-panel row indigo lighten-5">
+                                    <div class="row">
+                                        <a href="#modal1" class="waves-effect waves-light btn blue right modal-trigger"><i class="material-icons left">edit</i>Edit</a>      
+                                        <div id="modal1" class="modal center-align">
+                                            <form class="col s12">
+                                                <div class="modal-content">
+                                                    <h5>Edit Profile</h5>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="first_name" type="text" value="Justin" class="validate" required>
+                                                            <label for="first_name">First Name</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="last_name" type="text" value="Justin" class="validate" required>
+                                                            <label for="last_name">Last Name</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="phone_no" type="text" class="validate">
+                                                            <label for="phone_no">Phone Number</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="city" type="text" class="validate">
+                                                            <label for="city">City</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <select>
+                                                                <option value="" disabled selected>Choose your option</option>
+                                                                <option value="Nigeria">Nigeria</option>
+                                                                <option value="Kenya">Kenya</option>
+                                                                <option value="Uganda">Uganda</option>
+                                                            </select>
+                                                            <label>Country</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <p>
+                                                                <input id="male" type="radio" name="gender" value="Male" class="with-gap" />
+                                                                <label for="male">Male</label>
+                                                            </p>
+                                                            <p>
+                                                                <input id="female" type="radio" name="gender" value="Female" class="with-gap" checked />
+                                                                <label for="female">Female</label>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn modal-close waves-effect waves-light btn-flat red lighten-2 white-text">Cancel</button>
+                                                    <button type="submit" class="btn modal-action waves-effect waves-light btn-flat indigo accent-2 white-text">Save</button>
+                                                </div>               
+                                            </form>
+                                        </div>     
+                                    </div>                                   
+                                    <h5><i class="material-icons left">person</i> ABOUT</h5>
+                                    <div class="row divider black"></div>
+                                    <div id="about_user" class="row">
+                                        <div id="profile_username" class="row">
+                                            <label for="username" class="col s4">Username: </label>
+                                            <div id="username" class="col s8">Heavyman</div>
+                                        </div>
+                                        <div id="profile_first_name" class="row">
+                                            <label for="firstname" class="col s4">First Name: </label>
+                                            <div id="firstname" class="col s8">Justin</div>
+                                        </div>
+                                        <div id="profile_last_name" class="row">
+                                            <label for="lastname" class="col s4">Last Name: </label>
+                                            <div id="lastname" class="col s8">Justin</div>
+                                        </div>
+                                        <div id="profile_email" class="row">
+                                            <label for="email" class="col s4">Email: </label>
+                                            <div id="email" class="col s8">heavyman@gmail.com</div>
+                                        </div>
+                                        <div id="profile_phone" class="row">
+                                            <label for="phone" class="col s4">Phone No: </label>
+                                            <div id="phone" class="col s8">01-254-2456</div>
+                                        </div>
+                                        <div id="profile_gender" class="row">
+                                            <label for="gender" class="col s4">Gender: </label>
+                                            <div id="gender" class="col s8">Male</div>
+                                        </div>
+                                        <div id="profile_city" class="row">
+                                            <label for="city" class="col s4">City: </label>
+                                            <div id="city" class="col s8">Lagos</div>
+                                        </div>
+                                        <div id="profile_country" class="row">
+                                            <label for="country" class="col s4">Country: </label>
+                                            <div id="country" class="col s8">Nigeria</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
-            <div class="row"></div>
         </main>
-        <footer class="page-footer teal">
+        <footer class="page-footer indigo darken-3">
             <div class="footer-copyright">
                 <div class="container">
                     © 2017
-                    <a class="grey-text text-lighten-4 right" href="#!">About More-recipes</a>
                 </div>
             </div>
         </footer>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/src.js"></script>
     </body>
 </html>

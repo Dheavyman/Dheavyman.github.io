@@ -10,51 +10,136 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="nav-wrapper teal">
-                    <a href="#" class="brand-logo">More-Recipes</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <div id="heading" class="row valign-wrapper">
+                <div class="col s3">
+                    <h3><a href="index.html" class="brand-logo white-text">More-Recipes</a></h3>
+                </div>
+                <div id="search_bar" class="col s6 container">
+                    <form id="search">
+                        <div class="input-field white">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        </div>
+                    </form>
+                </div>
+                <div id="access_anchor" class="col s3">
+                    <a href="signin.html" class="white-text">Sign In</a>
+                    <a href="signup.html" class="white-text">Register</a>
+                </div>
+            </div>
+            <nav class="indigo accent-2">
+                <div class="nav-wrapper valign-wrapper right">
+                    <ul id="nav-mobile" class="right hide-on-small">
                         <li><a href="profile.html">Profile</a></li>
-                        <li><a href="favorites.html">Favorites</a></li>
-                        <li><a href="myrecipes.html">My Recipes</a></li>
+                        <li><a href="recipes.html">My Recipes</a></li>
+                        <li><a href="favorites.html">My Favorites</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
-            <div id="container" class="row">
-                <div class="row">
-                    <form class="col s8 offset-s2">
-                        <div class="input-field white">
-                            <input id="search" type="search" placeholder="Search for recipe" required>
-                            <label for="search" class="label-icon"><a ><i class="material-icons">search</i></a></label>
-                        </div>
-                    </form>
+            <div class="row">
+                <!-- Category side nav to be implemented later -->
+                <div id="category" class="col s2 z-depth-3 indigo lighten-4">
+                    <div class="card-panel col s12 indigo accent-2">
+                        <h6><span class=" subheader white-text">Category</span></h6>
+                    </div>
+                    <div class="collection">
+                        <a href="#!" class="collection-item black-text">Breakfast</a>
+                        <a href="#!" class="collection-item black-text">Lunch</a>
+                        <a href="#!" class="collection-item black-text">Dinner</a>
+                        <a href="#!" class="collection-item black-text">Appetizer</a>
+                        <a href="#!" class="collection-item black-text">Main</a>
+                        <a href="#!" class="collection-item black-text">Dessert</a>
+                    </div>
                 </div>
-                <div id="body">
-                    <table class="highlight responsive-table">
-                        <thead>
-                            <tr>
-                                <th><h4>Recipes</h4></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                        </tbody>
-                    </table>
+                <div id="main_body" class="col s10">
+                    <div class="row">
+                        <div class="slider col s12">
+                            <ul class="slides">
+                                <li>
+                                    <img src="images/background1.jpg">
+                                    <div class="caption center-align">
+                                        <h3>The taste of nature's gift.</h3>
+                                        <h5 class="light grey-text text-lighten-3">The source of healthy living.</h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/background2.jpg">
+                                    <div class="caption left-align">
+                                        <h3>We eat to live.</h3>
+                                        <h5 class="light grey-text text-lighten-3">Let the food be worth it.</h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/image3.jpg">
+                                    <div class="caption right-align">
+                                        <h3>Let healthiness be your priority.</h3>
+                                        <h5 class="light grey-text text-lighten-3">Health is wealth.</h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/image4.jpg">
+                                    <div class="caption center-align">
+                                        <h3>Share your wonderful recipe</h3>
+                                        <h5 class="light grey-text text-lighten-3">Never let your ideas get lost.</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="recipe_cards" class="row">
+                        <div class="col s12">
+                            <div class="card medium col s5">
+                                <div class="card-image">
+                                    <img src="images/image9.jpg">
+                                    <span class="card-title">German Sauce</span>
+                                </div>
+                                <div class="card-content">
+                                <p>A rich meal for an awesome afternoon.</p>
+                                </div>
+                                <div class="card-action">
+                                <a href="recipe.html"  class="blue-text">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card medium col s5 offset-s1">
+                                <div class="card-image">
+                                    <img src="images/image2.jpg">
+                                    <span class="card-title">Scotish Chips</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>A healthy delicious meal.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="recipe.html" class="blue-text">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card medium col s5">
+                                <div class="card-image">
+                                    <img src="images/image3.jpg">
+                                    <span class="card-title">Romanghetti</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>Rich spaghetti meal.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="recipe.html" class="blue-text">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row"></div>
         </main>
-        <footer class="page-footer teal">
+        <footer class="page-footer indigo darken-3">
             <div class="footer-copyright">
                 <div class="container">
                     © 2017
-                    <a class="grey-text text-lighten-4 right" href="#!">About More-recipes</a>
                 </div>
             </div>
         </footer>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/src.js"></script>
     </body>
 </html>
